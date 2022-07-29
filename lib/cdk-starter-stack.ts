@@ -16,8 +16,7 @@ export class CdkStarterStack extends Stack {
       handler: 'handler',
       entry: path.join(__dirname, `/../src/lambda/handlers/index.ts`),
       bundling: {
-        minify: true,
-        externalModules: ['aws-sdk']
+        minify: true
       }
     });
 
